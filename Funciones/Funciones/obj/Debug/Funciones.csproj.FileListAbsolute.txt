@@ -1,0 +1,9 @@
+C:\Users\rosar\Documents\C#\Funciones\Funciones\bin\Debug\Funciones.exe.config
+C:\Users\rosar\Documents\C#\Funciones\Funciones\bin\Debug\Funciones.exe
+C:\Users\rosar\Documents\C#\Funciones\Funciones\bin\Debug\Funciones.pdb
+C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.csprojResolveAssemblyReference.cache
+C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.Form1.resources
+C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.Properties.Resources.resources
+C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.csproj.GenerateResource.Cache
+C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.exe
+C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.pdb
