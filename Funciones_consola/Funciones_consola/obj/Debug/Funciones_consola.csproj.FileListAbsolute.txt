@@ -1,0 +1,5 @@
+C:\Users\rosar\Documents\C#\Funciones_consola\Funciones_consola\bin\Debug\Funciones_consola.exe.config
+C:\Users\rosar\Documents\C#\Funciones_consola\Funciones_consola\bin\Debug\Funciones_consola.exe
+C:\Users\rosar\Documents\C#\Funciones_consola\Funciones_consola\bin\Debug\Funciones_consola.pdb
+C:\Users\rosar\Documents\C#\Funciones_consola\Funciones_consola\obj\Debug\Funciones_consola.exe
+C:\Users\rosar\Documents\C#\Funciones_consola\Funciones_consola\obj\Debug\Funciones_consola.pdb
