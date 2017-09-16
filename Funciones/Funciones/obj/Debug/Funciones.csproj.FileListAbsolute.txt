@@ -7,3 +7,6 @@ C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.Properties.R
 C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.csproj.GenerateResource.Cache
 C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.exe
 C:\Users\rosar\Documents\C#\Funciones\Funciones\obj\Debug\Funciones.pdb
+C:\Users\rosar\Documents\Desarrollo C#\Aplicaciones-Empresariales-C-sharp\Funciones\Funciones\bin\Debug\Funciones.exe.config
+C:\Users\rosar\Documents\Desarrollo C#\Aplicaciones-Empresariales-C-sharp\Funciones\Funciones\obj\Debug\Funciones.exe
+C:\Users\rosar\Documents\Desarrollo C#\Aplicaciones-Empresariales-C-sharp\Funciones\Funciones\obj\Debug\Funciones.pdb
