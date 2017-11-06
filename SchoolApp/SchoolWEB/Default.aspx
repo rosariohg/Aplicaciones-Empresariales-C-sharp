@@ -2,5 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <asp:GridView ID="gvListado" runat="server"></asp:GridView>
+    <asp:GridView ID="gvListado" runat="server" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gvListado_SelectedIndexChanged"></asp:GridView>
+    <asp:LinkButton ID="lnkNuevo" runat="server" OnClick="lnkNuevo_Click">Nuevo</asp:LinkButton>
 </asp:Content>

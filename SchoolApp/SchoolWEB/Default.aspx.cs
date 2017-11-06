@@ -17,5 +17,16 @@ namespace SchoolWEB
             gvListado.DataSource = personB.ListarBLL();
             gvListado.DataBind();
         }
+
+        protected void gvListado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Session["PersonID"] = Convert.ToInt32(gvListado.SelectedRow.Cells[1].Text);
+            Response.Redirect("UpdatePerson.aspx");
+        }
+
+        protected void lnkNuevo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InsertPerson.aspx");
+        }
     }
 }

@@ -16,5 +16,26 @@ namespace SchoolBLL
         {
             return personDAL.Listar();
         }
+
+        public CPerson MostrarPersonaBLL(int ID)
+        {
+            return personDAL.MostrarPersona(ID);
+        }
+
+        public Boolean InsertarPersonaBLL(CPerson per)
+        {
+            if (personDAL.InsertarPersona(per) > 0)
+                return true;
+            else
+                return false;
+        }
+
+        public Boolean ModificarPersonaBLL (CPerson per)
+        {
+            if (personDAL.ModificarPersona(per) > 0)
+                return true;
+            else
+                return false;
+        }
     }
 }
