@@ -9,16 +9,32 @@
 
 <h2>Lista de Personas</h2>
 
-<div class="input-group">
-    <div class="col-md-8">
-        <text id="txtBuscar" placeholder="Buscar"></text>
+<!--<div class="col-md-4">
+    <div class="input-group">
+        <span>Nombre:</span> @Html.TextBox("Nombre")
+        <input type="submit" value="Buscar" />
+        input type="text" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Buscar</button>
+        </span>
+        
     </div>
-    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Width="250px" placeholder="Nombre a buscar"></asp:TextBox>&nbsp;
-    <asp:Button ID="Button1" runat="server" Text="Buscar" CssClass="btn btn-info" />
-</div>
+</div>-->
+
+@using (Html.BeginForm())
+{
+    <div class="col-md-4">
+        <div class="input-group">
+            <span>@Html.TextBox("datoBuscar"," " , new { @class = "form-conntrol", @type="text"  })</span>
+            <span>
+                <button class="btn btn-default" type="submit" value="Buscar"><i class="glyphicon glyphicon-search"></i></button>
+            </span>
+        </div>
+    </div>
+}
 
 
-@grid.GetHtml(tableStyle : "table table-striped",
+        @grid.GetHtml(tableStyle: "table table-striped",
         columns: grid.Columns(
             grid.Column(columnName: "PersonaID", header: "PersonaID"),
             grid.Column(columnName: "Nombre", header: "Nombre"),
@@ -26,9 +42,9 @@
             grid.Column(columnName: "FechaNac", header: "FechaNac"),
             grid.Column(columnName: "Direccion", header: "Direccion"),
             grid.Column(columnName: "Email", header: "Email"),
-            grid.Column(columnName: "Acciones", format:(item) =>
-                Html.ActionLink("Ver","Mostrar","Persona",
-                new { id = item.PersonaID},null)
+            grid.Column(columnName: "Acciones", format: (item) =>
+                 Html.ActionLink("Ver", "Mostrar", "Persona",
+                 new { id = item.PersonaID }, null)
             )
         )
     )
@@ -37,30 +53,30 @@
 
 
 
-<!--<table class="table table-striped">
-    <tr>
-        <th>PersonaID</th>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Fecha Nac.</th>
-        <th>Direccion</th>
-        <th>Email</th>
-        <th>Acciones</th>
-    </tr>
-        @foreach (var persona in Model)
-        {
+        <!--<table class="table table-striped">
             <tr>
-                <td>@persona.PersonaID</td>
-                <td>@persona.Nombre</td>
-                <td>@persona.Apellido</td>
-                <td>@persona.FechaNac</td>
-                <td>@persona.Direccion</td>
-                <td>@persona.Email</td>
-                <td>@Html.ActionLink("Ver", "Mostrar", "Persona", new
-               {
-                   id = persona.PersonaID
-               }, null)</td>
+                <th>PersonaID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha Nac.</th>
+                <th>Direccion</th>
+                <th>Email</th>
+                <th>Acciones</th>
             </tr>
-        }
-</table>
--->
+                @foreach (var persona in Model)
+                {
+                    <tr>
+                        <td>@persona.PersonaID</td>
+                        <td>@persona.Nombre</td>
+                        <td>@persona.Apellido</td>
+                        <td>@persona.FechaNac</td>
+                        <td>@persona.Direccion</td>
+                        <td>@persona.Email</td>
+                        <td>@Html.ActionLink("Ver", "Mostrar", "Persona", new
+                       {
+                           id = persona.PersonaID
+                       }, null)</td>
+                    </tr>
+                }
+        </table>
+        -->
